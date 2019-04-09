@@ -1,0 +1,2 @@
+C:\Users\ali_s\source\repos\SALSAv2\SalsaPro\SalsaPro\obj\Debug\SalsaPro.csprojResolveAssemblyReference.cache
+C:\Users\ali_s\source\repos\SALSAv2\SalsaPro\SalsaPro\obj\Debug\SalsaPro.csproj.CoreCompileInputs.cache

@@ -8,7 +8,7 @@ namespace SalsaPro.Models
     public class IdeaTag
     {
 
-        public int IdeaTagId { get; set; }
+        public int IdeaTag_Id { get; set; }
         public string Tag { get; set; }
 
     }

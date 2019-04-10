@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Web;
 
@@ -15,16 +16,24 @@ namespace SalsaPro.Models
         public int IdeaId { get; set; }
 
 
-        public virtual User Users { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
+        // ForeignKey("User")]
+        public ICollection<User> Users { get; set; }
+        public string TitleOfIdea { get; set; }
+        public string IdeaDetail { get; set; }
 
-
-        public virtual IdeaTag IdeaTags { get; set; }
+        // ForeignKey("User")]
+        public User User{ get; set; }
+        public int User_Id { get; set; }
+        public IdeaTag IdeaTag { get; set; }
+        public int IdeaTag_Id { get; set; }
         public bool IsAnonymous { get; set; }
 
-        public DateTime postDate { get; set; }
+        public DateTime IdeaDate { get; set; }
         public bool IsVisibile { get; set; }
 
+        public Idea()
+        {
+            Users = new Collection<User>();
+        }
     }
 }
